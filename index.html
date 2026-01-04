@@ -41,14 +41,19 @@ as open resources for the community.
 <div id="list">Loading…</div>
 
 <script>
-fetch('./sources.json')
-  .then(r => r.json())
-  .then(data => {
+const [sources, index] = await Promise.all([
+  fetch('./sources.json').then(r => r.json()),
+  fetch('./index.json').then(r => r.json())
+]);
+
     const root = document.getElementById('list');
     root.innerHTML = '';
 
-    data.forEach((item, i) => {
+    sources.forEach((item, i) => {
+      const id = index[i];
+      if (!id) return
       const title = item.name ?? `Panorama ${i + 1}`;
+      const cdnBase = `https://cdn.jsdelivr.net/gh/mddspb/cubemap-panoramas@main/${id}`;
       const div = document.createElement('div');
       div.className = 'panorama';
 
@@ -61,19 +66,13 @@ fetch('./sources.json')
           ${item.homepage ? `<strong>Homepage:</strong> <a href="${item.homepage}" target="_blank">${item.homepage}</a><br>` : ''}
         </div>
         <p>
-          <strong>CDN base:</strong><br>
-          <code>https://cdn.jsdelivr.net/gh/&lt;username&gt;/cubemap-panoramas/&lt;panorama-id&gt;/</code>
+          <strong>CDN base:</strong>
+          <code>${cdnBase}/px.webp</code>
         </p>
       `;
 
       root.appendChild(div);
     });
-  })
-  .catch(err => {
-    document.getElementById('list').textContent =
-      'Failed to load sources.json';
-    console.error(err);
-  });
 </script>
 
 </body>
