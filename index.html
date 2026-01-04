@@ -41,10 +41,11 @@ as open resources for the community.
 <div id="list">Loading…</div>
 
 <script>
-const [sources, index] = await Promise.all([
-  fetch('./sources.json').then(r => r.json()),
-  fetch('./index.json').then(r => r.json())
-]);
+  async function main() {
+    const [sources, index] = await Promise.all([
+      fetch('./sources.json').then(r => r.json()),
+      fetch('./index.json').then(r => r.json())
+    ]);
 
     const root = document.getElementById('list');
     root.innerHTML = '';
@@ -73,6 +74,9 @@ const [sources, index] = await Promise.all([
 
       root.appendChild(div);
     });
+  }
+
+  main();
 </script>
 
 </body>
