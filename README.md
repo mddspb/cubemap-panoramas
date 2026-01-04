@@ -98,6 +98,7 @@ Under the following terms:
 License text:
 https://creativecommons.org/licenses/by-nc/4.0/
 ---
+
 ## Philosophy
 
 Think of this project as a real-world library:
