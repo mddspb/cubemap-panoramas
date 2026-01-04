@@ -78,7 +78,8 @@ All original sources and credits are listed in:
 - `sources.json`
 - the GitHub Pages catalog
 
-If you use these panoramas publicly, please include attribution where possible.
+If you use these panoramas publicly, please include attribution where possible
+
 ---
 ## License
 ### Content
@@ -95,8 +96,8 @@ Under the following terms:
 - Attribution required
 - Non-commercial use only
 
-License text:
-https://creativecommons.org/licenses/by-nc/4.0/
+License text: https://creativecommons.org/licenses/by-nc/4.0/
+
 ---
 
 ## Philosophy
@@ -106,10 +107,12 @@ Think of this project as a real-world library:
 - the content is fetched only when needed
 - nothing unnecessary is duplicated
 - authors are always acknowledged
+
 ---
 ## Status
 
 🚧 Actively evolving
 Features like tagging, semantic search, and voice-based selection may appear post-MVP.
+
 ---
 If you are an author and would like your work credited differently — or removed — please open an issue.
