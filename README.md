@@ -56,7 +56,7 @@ This design allows:
 - aggressive caching
 - painless future format evolution
 - reliable delivery via app updates (e.g. CapGo)
-
+---
 ## Usage (example)
 
 Via jsDelivr CDN:
@@ -69,7 +69,7 @@ The library can be used in:
 - WebXR / immersive environments
 - Experimental spatial interfaces
 - Educational and artistic projects
-
+---
 ## Attribution
 
 This project deeply respects the work of panorama authors.
@@ -79,7 +79,7 @@ All original sources and credits are listed in:
 - the GitHub Pages catalog
 
 If you use these panoramas publicly, please include attribution where possible.
-
+---
 ## License
 ### Content
 
@@ -97,7 +97,7 @@ Under the following terms:
 
 License text:
 https://creativecommons.org/licenses/by-nc/4.0/
-
+---
 ## Philosophy
 
 Think of this project as a real-world library:
@@ -105,10 +105,10 @@ Think of this project as a real-world library:
 - the content is fetched only when needed
 - nothing unnecessary is duplicated
 - authors are always acknowledged
-
+---
 ## Status
 
 🚧 Actively evolving
 Features like tagging, semantic search, and voice-based selection may appear post-MVP.
-
+---
 If you are an author and would like your work credited differently — or removed — please open an issue.
