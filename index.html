@@ -48,11 +48,12 @@ fetch('./sources.json')
     root.innerHTML = '';
 
     data.forEach((item, i) => {
+      const title = item.name ?? `Panorama ${i + 1}`;
       const div = document.createElement('div');
       div.className = 'panorama';
 
       div.innerHTML = `
-        <h2>Panorama ${i + 1}</h2>
+        <h2>${title}</h2>
         <div class="meta">
           <strong>Author:</strong> ${item.author || 'Unknown'}<br>
           <strong>Source:</strong> ${item.source || '—'}<br>
