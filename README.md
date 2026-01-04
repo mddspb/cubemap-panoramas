@@ -11,6 +11,13 @@ The project focuses on:
 This repository is designed to be easily consumed by web, mobile, and immersive interfaces (including [HidHud](https://hidhud.one/)).
 
 ---
+## Panorama Credits
+
+We maintain a public list of all panorama sources and authors.
+
+👉 https://mddspb.github.io/cubemap-panoramas/
+
+---
 
 ## What’s inside
 
