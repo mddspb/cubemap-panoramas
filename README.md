@@ -8,7 +8,7 @@ The project focuses on:
 - clear attribution to original authors
 - non-commercial, open usage
 
-This repository is designed to be easily consumed by web, mobile, and immersive interfaces (including HidHud).
+This repository is designed to be easily consumed by web, mobile, and immersive interfaces (including [HidHud](https://hidhud.one/)).
 
 ---
 
