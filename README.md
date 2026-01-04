@@ -49,80 +49,64 @@ The index file is intentionally minimal:
   "a3f9c1d0e6b24c...",
   "9b8d72e4a91f0c..."
 ]
-
+```
 
 This design allows:
 
-aggressive caching
+- aggressive caching
+- painless future format evolution
+- reliable delivery via app updates (e.g. CapGo)
 
-painless future format evolution
-
-reliable delivery via app updates (e.g. CapGo)
-
-Usage (example)
+## Usage (example)
 
 Via jsDelivr CDN:
-
+```
 https://cdn.jsdelivr.net/gh/<username>/cubemap-panoramas/<panorama-id>/px.webp
-
+```
 
 The library can be used in:
+- WebGL / Three.js / A-Frame
+- WebXR / immersive environments
+- Experimental spatial interfaces
+- Educational and artistic projects
 
-WebGL / Three.js / A-Frame
-
-WebXR / immersive environments
-
-Experimental spatial interfaces
-
-Educational and artistic projects
-
-Attribution
+## Attribution
 
 This project deeply respects the work of panorama authors.
 
 All original sources and credits are listed in:
-
-sources.json
-
-the GitHub Pages catalog
+- `sources.json`
+- the GitHub Pages catalog
 
 If you use these panoramas publicly, please include attribution where possible.
 
-License
-Content
+## License
+### Content
 
 All panoramas and generated cubemaps are licensed under:
 
-Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)
+**Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)**
 
 You are free to:
-
-Share
-
-Adapt
+- Share
+- Adapt
 
 Under the following terms:
-
-Attribution required
-
-Non-commercial use only
+- Attribution required
+- Non-commercial use only
 
 License text:
 https://creativecommons.org/licenses/by-nc/4.0/
 
-Philosophy
+## Philosophy
 
 Think of this project as a real-world library:
+- the catalog is always nearby
+- the content is fetched only when needed
+- nothing unnecessary is duplicated
+- authors are always acknowledged
 
-the catalog is always nearby
-
-the content is fetched only when needed
-
-nothing unnecessary is duplicated
-
-authors are always acknowledged
-
-Status
+## Status
 
 🚧 Actively evolving
 Features like tagging, semantic search, and voice-based selection may appear post-MVP.
