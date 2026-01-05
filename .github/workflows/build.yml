@@ -39,7 +39,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install opencv-python-headless py360convert
+          pip install -r requirements.txt
 
       - name: Debug Python environment
         run: |
