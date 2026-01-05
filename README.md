@@ -82,7 +82,7 @@ This project deeply respects the work of panorama authors.
 
 All original sources and credits are listed in:
 - `sources.json`
-- the GitHub Pages catalog
+- [the GitHub Pages catalog](https://mddspb.github.io/cubemap-panoramas/)
 
 If you use these panoramas publicly, please include attribution where possible
 
