@@ -32,7 +32,7 @@ We maintain a public list of all panorama sources and authors.
 ## Panorama format
 
 Each panorama is stored as a cubemap:
-
+```
 <panorama-id>/
 px.webp
 nx.webp
@@ -40,8 +40,7 @@ py.webp
 ny.webp
 pz.webp
 nz.webp
-
-
+```
 - `panorama-id` is derived from the **MD5 hash of the source URL**
 - Images are optimized for fast delivery via CDN (jsDelivr)
 
