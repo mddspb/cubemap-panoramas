@@ -1,3 +1,4 @@
+import numpy as np
 import cv2
 import py360convert
 import sys
@@ -60,17 +61,27 @@ def main():
         print("ERROR: failed to load HDR image")
         sys.exit(2)
 
+    print("Applying tone mapping...")
+    tonemap = cv2.createTonemapReinhard(
+        gamma=2.2,
+        intensity=-0.5,
+        light_adapt=0.9,
+        color_adapt=0.0
+    )
+
+
+    ldr = tonemap.process(img)
+    ldr = np.clip(ldr * 255, 0, 255).astype("uint8")
+
     print("Converting to cubemap...")
     cube = py360convert.e2c(
-        img,
+        ldr,
         face_w=args.face_size,
         mode="bilinear",
         cube_format="dict"
     )
 
     for face, data in cube.items():
-        data = cv2.normalize(data, None, 0, 255, cv2.NORM_MINMAX)
-        data = data.astype("uint8")
 
         face_name = FACE_MAP[face]
         out_file = output_dir / f"{face_name}.webp"
